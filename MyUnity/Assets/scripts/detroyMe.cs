@@ -8,7 +8,9 @@ public class detroyMe : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, aliveTime);
+        if(gameObject != null) {
+            Destroy(gameObject, aliveTime);
+        }
     }
 
     // Update is called once per frame

@@ -30,4 +30,7 @@ public class projecttilecontroller : MonoBehaviour
     }
 
     //Tao chuc nang lam vien dan dung lai
+    public void removeForce() {
+        myBody.velocity = new Vector2(0, 0);
+    }
 }

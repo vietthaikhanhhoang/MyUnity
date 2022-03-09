@@ -26,8 +26,8 @@ public class playerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myBody = GetComponent<Rigidbody2D>();
-        myAnim = GetComponent<Animator>();
+        myBody = GetComponent<Rigidbody2D>(); //.velocity: di len, xuong, trai phai
+        myAnim = GetComponent<Animator>(); //thay doi trang thai: dung im, chay
 
         facingRight = true;
     }
@@ -55,7 +55,7 @@ public class playerController : MonoBehaviour
 
                 //luc giup nhay len
                 myBody.velocity = new Vector2(myBody.velocity.x, jumpHeight);
-            }
+             }
         }
 
         //Chuc nang ban tu ban phim, ban ngay lap tuc la GetAxisRaw
